@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔍 Cerberus - Pentesting Web Application
 
-## Getting Started
+A web application for automated security reconnaissance, written in Python (Flask) and JavaScript. It integrates advanced scanning tools, automatic report generation, AI assistance, and a dashboard for managing versioned projects and scan results.
 
-First, run the development server:
+## 🚀 Main Features
+
+- Port and service scanning (Nmap)
+- DNS reconnaissance (DNSdumpster + MXToolbox + API Ninja WHOIS)
+- Email OSINT: leaked emails detection (IntelligenceX + LeakCheck)
+- Subdomain enumeration and activity check (Subfinder + HTTPX)
+- Web vulnerability scanning (Nuclei)
+- CMS detection (WhatWeb)
+- Website screenshot capture (Pyppeteer)
+- Web directory and file enumeration (Feroxbuster)
+- WordPress reconnaissance and brute force (WPScan)
+- Joomla reconnaissance (Joomscan)
+- FTP service analysis (ftplib + Searchsploit)
+- SSH brute-force and analysis (Hydra + Searchsploit)
+- Automatic PDF report generation (ReportLab)
+- Built-in AI assistant using Gemini Flash 2.0
+
+## 🧠 AI Assistant
+
+Includes a generative AI model that can:
+- Suggest next steps after a scan
+- Recommend solutions for detected vulnerabilities
+- Answer technical questions based on scan results
+
+## 🖥️ Usage Modes
+
+### Graphical User Interface (GUI)
+
+Allows users to:
+- Create and manage audit projects
+- Launch normal or comprehensive scans
+- View versioned reports and track audit history
+
+### Command-Line Mode
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+python3 main.py <target> [-p <project>] [-ex]
+````
+
+* `-p`: Associate the scan with an existing project
+* `-ex`: Enable exhaustive scan mode
+
+## ⚙️ Requirements
+
+* Python 3
+* Linux OS (recommended)
+* All dependencies are listed in `requirements.txt`
+
+Install dependencies with:
+
+```bash
+pip install -r requirements.txt
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+├── config/                    # Configuration files
+├── static/                    # Styles
+├── templates/                 # GUI
+├── modules/                   # Individual scan modules
+├── reports/                   # Generated reports
+├── logs/                      # Generated logs
+├── projects/                  # Directory for projects
+├── wordlists/                 # Wordlists
+├── main.py                    # Main script
+├── app.py                     # Entry point for GUI
+└── requirements.txt           # Project dependencies
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📸 Screenshot
 
-## Learn More
+<br/>
 
-To learn more about Next.js, take a look at the following resources:
+<p align="center">
+  <img src="Cerberus_old/static/img/demo1.jpg" alt="demo_image">
+</p>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🙋‍♂️ Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Developed by **David Gordillo Burrero** as part of the Bachelor's Thesis at **Universidad de Extremadura**.
+For more information, refer to the final project report.
 
-## Deploy on Vercel
+<br/>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<p align="center">
+  <img src="Cerberus_old/static/img/cerberus_logo.png" alt="cerberus_logo" width="100" height="100">
+</p>

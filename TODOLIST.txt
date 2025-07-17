@@ -1,0 +1,10 @@
+* Lavado de cara a la interfaz, aprovechando lo que ofrece el framework elegido (seguramente Next.js).
+* Opcion de dejar editar el PDF de informe para añadir texto, con el objetivo de rellenar el informe con información adicional de la auditoría (cosas encontradas a mano, explotacion, etc.).
+* Mejorar la presentacion del informe.
+* Utilizar algun framework como React o Next.js.
+* Modularizar el script.js.
+* Utilizar una IA especializada en Pentesting (mirar si pentestgpt tiene API).
+* Funcionalidad para que se puedan programar escaneos y se ejecuten automaticamente a X hora.
+* Personalizacion de escaneos para lanzar unicamente los modulos que se deseen.
+* Dejar editar los proyectos (modificar el target, etc.).
+* Fixear el bug del modulo de JoomScan (en las core vulnerabilities solo printea en el informe la primera en caso de haber mas de una).
