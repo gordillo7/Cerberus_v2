@@ -56,15 +56,7 @@ Install dependencies with:
 pip install -r requirements.txt
 ```
 
-## 📸 Screenshot
-
-<br/>
-
-<p align="center">
-  <img src="Cerberus_old/static/img/demo1.jpg" alt="demo_image">
-</p>
-
 ## License
 This project is distributed under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license.
 
-<img src="static/images/licenseimage.png" alt="License image" width="79" height="28">
+<img src="public/img/licenseimage.png" alt="License image" width="79" height="28">
