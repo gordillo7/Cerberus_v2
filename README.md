@@ -56,7 +56,7 @@ Install dependencies with:
 pip install -r requirements.txt
 ```
 
-## License
+## 📌 License
 This project is distributed under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license.
 
 <img src="public/img/licenseimage.png" alt="License image" width="79" height="28">
