@@ -56,22 +56,6 @@ Install dependencies with:
 pip install -r requirements.txt
 ```
 
-## 📁 Project Structure
-
-```
-├── config/                    # Configuration files
-├── static/                    # Styles
-├── templates/                 # GUI
-├── modules/                   # Individual scan modules
-├── reports/                   # Generated reports
-├── logs/                      # Generated logs
-├── projects/                  # Directory for projects
-├── wordlists/                 # Wordlists
-├── main.py                    # Main script
-├── app.py                     # Entry point for GUI
-└── requirements.txt           # Project dependencies
-```
-
 ## 📸 Screenshot
 
 <br/>
@@ -80,13 +64,7 @@ pip install -r requirements.txt
   <img src="Cerberus_old/static/img/demo1.jpg" alt="demo_image">
 </p>
 
-## 🙋‍♂️ Author
+## License
+This project is distributed under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license.
 
-Developed by **David Gordillo Burrero** as part of the Bachelor's Thesis at **Universidad de Extremadura**.
-For more information, refer to the final project report.
-
-<br/>
-
-<p align="center">
-  <img src="Cerberus_old/static/img/cerberus_logo.png" alt="cerberus_logo" width="100" height="100">
-</p>
+<img src="static/images/licenseimage.png" alt="License image" width="79" height="28">
