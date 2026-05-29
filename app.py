@@ -6,7 +6,7 @@ import os, signal, subprocess, json, datetime, io, re
 import google.generativeai as genai
 from PyPDF2 import PdfReader
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='frontend/dist', static_url_path='')
 app.current_scan_process = None
 
 os.makedirs("logs", exist_ok=True)
@@ -16,7 +16,14 @@ os.makedirs("projects", exist_ok=True)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return send_from_directory('frontend/dist', 'index.html')
+
+
+@app.route('/<path:path>')
+def catch_all(path):
+    if os.path.exists(os.path.join('frontend/dist', path)):
+        return send_from_directory('frontend/dist', path)
+    return send_from_directory('frontend/dist', 'index.html')
 
 
 @app.route('/api/stats')
